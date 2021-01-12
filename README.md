@@ -11,3 +11,6 @@ To make your business smooth , These are the main features in our web app
 4) Details  -      In this section you can see all details of particular customer with his previous entries. You won't lose any of your sales data.
 5) Editable    -   You can edit or delete any entry of any customer.
                    
+There are some more features which are in developing like
+1) Products - You will manage your products and inventory in this section.
+2) report - you can see all sales report in any month with the help of graphs and tables.
