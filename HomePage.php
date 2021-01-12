@@ -12,7 +12,7 @@
            $email = $_POST["email"];
            $number = $_POST["number"];
            
-           $user = "SELECT * FROM `users` WHERE user_email='$email'";
+           $user = "SELECT * FROM `admin` WHERE user_email='$email'";
            $result = mysqli_query($conn,$user);
            $num = mysqli_num_rows($result);
            if($num!=0)
@@ -25,7 +25,7 @@
             else
            {
                $hash = password_hash($password, PASSWORD_DEFAULT);
-               $sql = "INSERT INTO `users` (`UserName`, `user_email`, `user_password`, `user_contact_no`) VALUES ('$username', '$email', '$hash', '$number')";
+               $sql = "INSERT INTO `admin` (`UserName`, `user_email`, `user_password`, `user_contact_no`) VALUES ('$username', '$email', '$hash', '$number')";
                $result = mysqli_query($conn,$sql);
                
                if(!$result)
@@ -41,7 +41,7 @@
           $email = $_POST["email"];
           $password = $_POST["password"];
 
-          $sql = "Select * from users where user_email='$email' ";
+          $sql = "Select * from admin where user_email='$email' ";
           $result = mysqli_query($conn,$sql);
           if($result)
             {
@@ -56,6 +56,7 @@
                              $_SESSION['loggedin'] = true;
                              $_SESSION['email'] = $email;
                              $_SESSION['UserName'] = $row['UserName'];
+                             $_SESSION['admin_id'] = $row['sno'];
                              header("location: welcome.php");
                         }
                         else
@@ -94,7 +95,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-<body> <h1 class="error topline">Idiary Web App</h1>
+<body style="background-color: #eb0000db;"> <h1 class="error topline">Garg Enterprises</h1>
     <?php 
           if($show_error)
           {
@@ -106,10 +107,10 @@
      ?>
     <div class="two-grids">
         <div class="mid-class">
-            <div class="img-right-side">
-                <h3>Welcome To IDiary</h3>
+            <div class="img-right-side" >
+                <h3 style="font-size: 46px ;font-family: italic;">Garg Enterprises</h3>
                 <p>...</p>
-                <img src="images/b11.png" class="img-fluid" alt="">
+                <img style="padding: 0%;" src="images/coke.png" class="img-fluid" alt="">
             </div>
 
              <div class="txt-left-side signin-form">
@@ -152,7 +153,7 @@
 
              <div class="txt-left-side signup-form" style="display: none; padding: 1em 2.7em;">
                 <h2> SignUp Here </h2>
-                <form action="/IDiary/HomePage.php" method="post">
+                <form action="/Garg Enterprises/HomePage.php" method="post">
                     <div class="form-left-to-l">
                         <span class="fa fa-user" aria-hidden="true"></span>
                         <input type="text" name="name" placeholder="Name" required="">
