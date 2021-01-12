@@ -15,5 +15,5 @@ There are some more features which are in developing like
 1) Products - You will manage your products and inventory in this section.
 2) report - you can see all sales report in any month with the help of graphs and tables.
 
-Technology Used - PHP , HTML5 , CSS , JavaScript , MYSQL , Apache Server 
-Frameworks and libraries used - Bootstrap , jquery , Microsoft visual studio 
+Technology Used - PHP , HTML5 , CSS , JavaScript , MYSQL , Apache Server. 
+Frameworks and libraries used - Bootstrap , jquery , Microsoft visual studio. 
