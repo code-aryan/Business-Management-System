@@ -1,4 +1,4 @@
-# Business-Management-System
+# Business Management System
 Simple way to keep track of your daily sales and customers
 
 To make your business smooth , These are the main features in our web app
