@@ -18,3 +18,5 @@ There are some more features which are in developing like
 Technology Used - PHP , HTML5 , CSS , JavaScript , MYSQL , Apache Server. 
 
 Frameworks and libraries used - Bootstrap , jquery , Microsoft visual studio. 
+
+Live Hosted On: http://gargenterprises.epizy.com/Garg%20Enterprises/HomePage.php
